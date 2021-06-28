@@ -1,0 +1,138 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url(images/bg.jpg);
+    /* background-image: linear-gradient(
+    rgba(0,0,0,0.5)
+    rgba(0, 0, 0, 0.5); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-size: 20px;
+    overflow-x:hidden ;
+    font-family: 'Girassol', cursive;
+    
+}
+.clearfix: after{
+    content: "."
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+
+
+}
+.row{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.logo{
+    position: absolute;
+    float: left;
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+    animation:spin 4s linear infinite;
+}
+ 
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+.main-nav{
+    float:right;
+    margin-top: 60px;
+}
+.main-nav li{
+    
+    display: inline-block;
+    list-style: none;
+
+}
+.main-nav li a:hover{
+    transform: scale(1.5);   
+     color: plum;
+     border-radius: 200px;
+    background-color: black;
+    padding: 15px;
+    
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    
+
+}
+.main-nav li a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    margin:30px;
+    font-weight:bold;
+
+
+}
+.main-content-header{
+    width: 1180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+h1{
+    color: black;
+    font-size: 340%;
+    word-spacing: 5px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+     
+}
+.btn{
+    margin-right: 30px; 
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    border-radius: 200px;
+    background-color: black;
+    color: white;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.btn:hover{
+    background-color: rgb(36, 37, 34);
+    color: plum;
+transform: scale(1.5);
+}
+.btnf{
+    margin-right: 50px;
+}
+span{
+    animation: colorchangecafe 1s infinite;
+}
+@keyframes colorchangecafe
+{
+    10%{
+        color: hotpink;
+    }
+    25%{
+        color: rgb(248, 116, 63);
+    }
+   50%{
+        color: rgb(63, 248, 233);
+    }
+   75%{
+        color: rgb(63, 106, 248);
+    }
+   100%{
+        color: rgb(66, 230, 87);
+    }
+}
+
+    @media screen  (max-width: 800px){
+        .main-content-header{
+            width:100%;
+            padding:0 2%;
+        }
+    }
+      
+        
+    
