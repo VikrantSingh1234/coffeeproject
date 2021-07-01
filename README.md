@@ -1,2 +1,2 @@
 # coffeeproject
-this is the project using HTML CSS.
+frontend project.
